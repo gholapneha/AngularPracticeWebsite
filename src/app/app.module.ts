@@ -19,6 +19,10 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { EditEmployeeComponent } from './components/edit-employee/edit-employee.component';
 import { NotesComponent } from './components/notes/notes.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { DateComponent } from './components/date/date.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+import { TagsComponent } from './components/tags/tags.component';
 
 
 const appRoute: Routes = [
@@ -28,7 +32,11 @@ const appRoute: Routes = [
   { path: 'editEmployee/:id', component: EditEmployeeComponent},
   { path: 'users', component: UsersComponent},
   {path: 'photos', component: PhotosComponent},
-  { path: 'notes', component: NotesComponent}
+  { path: 'notes', component: NotesComponent},
+  { path: 'chart', component: ChartComponent},
+  { path: 'date', component: DateComponent},
+  { path: 'child', component: ParentComponent},
+  { path: 'tags', component: TagsComponent}
 ];
 
 @NgModule({
@@ -41,7 +49,11 @@ const appRoute: Routes = [
     PhotosComponent,
     EditEmployeeComponent,
     NotesComponent,
-    ChartComponent
+    ChartComponent,
+    DateComponent,
+    ParentComponent,
+    ChildComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,

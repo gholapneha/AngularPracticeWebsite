@@ -1,0 +1,14 @@
+<div>
+  <h4>{{user.name}}</h4>
+  <h4>{{user.designation}}</h4>
+  <button *ngIf = !isCollapse (click) = "toggleCollapse()">Expand</button>
+  <button *ngIf = isCollapse (click) = "toggleCollapse()">Collapse</button>
+  <div *ngIf = !isCollapse>
+    <h4>{{user.address}}</h4>
+    <h4 *ngFor = "let phoneNumber of user.phone">{{phoneNumber}}</h4>
+  </div>
+
+</div>
+<!-- <h1>
+ Child Works{{ childMessageRecieve }}
+</h1> -->

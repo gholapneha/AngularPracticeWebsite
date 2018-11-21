@@ -36,7 +36,7 @@ export class EmployeeComponent implements OnInit {
      */
     employeeService.getEmployeeList().then(
       (response: EmployeeModel) => {
-        this.employeeList = response;
+        // this.employeeList = response;
       }
     );
    }

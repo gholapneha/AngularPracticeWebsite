@@ -1,0 +1,11 @@
+<input type="text" value = "Neha" [(ngModel)] = "username">
+<button (click) = "search()">Search</button>
+<div *ngIf = response>
+    <p>Login: {{response?.login}}</p>
+    <p>Login Name: {{response?.name}}</p>
+    <p>Id: {{response?.id}}</p>
+    <p>Public_Gists: {{response?.public_gists}}</p>
+    <p>Public_Repos: {{response?.public_repos}}</p>
+    
+</div>
+<!-- <app-child [user] = "user"></app-child> -->
